@@ -1,0 +1,10 @@
+C:\Users\Красавчик\source\repos\z02.form\z02.form\bin\Debug\z02.form.exe.config
+C:\Users\Красавчик\source\repos\z02.form\z02.form\bin\Debug\z02.form.exe
+C:\Users\Красавчик\source\repos\z02.form\z02.form\bin\Debug\z02.form.pdb
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.csprojAssemblyReference.cache
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.Form1.resources
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.Properties.Resources.resources
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.csproj.GenerateResource.cache
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.csproj.CoreCompileInputs.cache
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.exe
+C:\Users\Красавчик\source\repos\z02.form\z02.form\obj\Debug\z02.form.pdb

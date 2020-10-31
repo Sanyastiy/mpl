@@ -1,0 +1,7 @@
+C:\Users\Красавчик\source\repos\z02.console\z02.console\obj\Debug\z02.console.csprojAssemblyReference.cache
+C:\Users\Красавчик\source\repos\z02.console\z02.console\obj\Debug\z02.console.csproj.CoreCompileInputs.cache
+C:\Users\Красавчик\source\repos\z02.console\z02.console\bin\Debug\z02.console.exe.config
+C:\Users\Красавчик\source\repos\z02.console\z02.console\bin\Debug\z02.console.exe
+C:\Users\Красавчик\source\repos\z02.console\z02.console\bin\Debug\z02.console.pdb
+C:\Users\Красавчик\source\repos\z02.console\z02.console\obj\Debug\z02.console.exe
+C:\Users\Красавчик\source\repos\z02.console\z02.console\obj\Debug\z02.console.pdb
