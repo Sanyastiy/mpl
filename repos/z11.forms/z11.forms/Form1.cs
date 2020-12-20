@@ -119,23 +119,7 @@ namespace z11.forms
                 get { return IntArray[index1, index2]; }
             }
 
-            //операции ++ (--): одновременно увеличивает (уменьшает) значение всех элементов массива на 1;
-            public static ArrayDouble operator ++(ArrayDouble obj)
-            {
-                for (int i = 0; i < obj.n; i++)
-                    for (int j = 0; j < obj.n; j++)
-                        obj.IntArray[i, j] = obj.IntArray[i, j] + 1;
-                return obj;
-            }
-
-            public static ArrayDouble operator --(ArrayDouble obj)
-            {
-                for (int i = 0; i < obj.n; i++)
-                    for (int j = 0; j < obj.n; j++)
-                        obj.IntArray[i, j] = obj.IntArray[i, j] - 1;
-                return obj;
-            }
-
+ 
             // Преобразования класса массив в двумерный массив (и наоборот).
             public static explicit operator int[,] (ArrayDouble obj)
             {
@@ -169,8 +153,6 @@ namespace z11.forms
             tabControl1.SelectedIndex = 2;
             button3.Visible = true;
             button5.Visible = true;
-            button6.Visible = true;
-            button7.Visible = true;
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -182,21 +164,7 @@ namespace z11.forms
 
         private void Button5_Click(object sender, EventArgs e)
         {
-
             array.Scal = 5;
-            array.Show(dataGridView1);
-        }
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-            array++;
-            array.Show(dataGridView1);
-
-        }
-
-        private void Button7_Click(object sender, EventArgs e)
-        {
-            array--;
             array.Show(dataGridView1);
         }
     }

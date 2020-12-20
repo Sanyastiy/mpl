@@ -84,23 +84,6 @@ namespace ArrayDouble
             get { return IntArray[index1, index2]; }
         }
 
-        //операции ++ (--): одновременно увеличивает (уменьшает) значение всех элементов массива на 1;
-        public static ArrayDouble operator ++(ArrayDouble obj)
-        {
-            for (int i = 0; i < obj.n; i++)
-                for (int j = 0; j < obj.n; j++)
-                    obj.IntArray[i, j] = obj.IntArray[i, j] + 1;
-            return obj;
-        }
-
-        public static ArrayDouble operator --(ArrayDouble obj)
-        {
-            for (int i = 0; i < obj.n; i++)
-                for (int j = 0; j < obj.n; j++)
-                    obj.IntArray[i, j] = obj.IntArray[i, j] - 1;
-            return obj;
-        }
-
         // Преобразования класса массив в двумерный массив (и наоборот).
         public static explicit operator int[,] (ArrayDouble obj)
         {
@@ -138,14 +121,6 @@ namespace ArrayDouble
 
             Console.WriteLine("\nУстановить значение всех элементы главной диагонали массива равное скаляру (5): ");
             array.Scal = 5;
-            array.Show();
-
-            Console.WriteLine("\nОперация ++: одновременно увеличивает значение всех элементов массива на 1;");
-            array++;
-            array.Show();
-
-            Console.WriteLine("\nОперация --: одновременно уменьшает значение всех элементов массива на 1;");
-            array--;
             array.Show();
 
             Console.ReadLine();
