@@ -20,7 +20,7 @@ namespace DoubleArray
             DoubleArray = new double[n, m];
         }
 
-        public ArrayDouble() { }
+        
 
         // Ввести элементы массива с клавиатуры;
         public void Enter_Array()
@@ -97,9 +97,12 @@ namespace DoubleArray
             get { return DoubleArray[i, j]; }
         }
 
-        // Операция ++: одновременно увеличивает значение всех элементов массива на 1;
-        public static ArrayDouble operator ++(ArrayDouble obj)
+  
+
+    // Операция ++: одновременно увеличивает значение всех элементов массива на 1;
+    public static ArrayDouble operator ++(ArrayDouble obj)
         {
+            
             for (int i = 0; i < obj.n; i++)
                 for (int j = 0; j < obj.m; j++)
                     obj.DoubleArray[i, j] = obj.DoubleArray[i, j] + 1;

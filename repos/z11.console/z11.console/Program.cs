@@ -68,6 +68,18 @@ namespace ArrayDouble
             }
         }
 
+        public int DefaultSize
+        {
+            get
+            {                
+                return n;
+            }
+            set
+            {
+                n = value;
+            }
+        }
+
         // позволяющее установить значение всех элементы главной диагонали массива равное скаляру (доступное только для записи).
         public int Scal
         {
@@ -111,6 +123,12 @@ namespace ArrayDouble
             array.ReadArray();
 
             Console.WriteLine("\nВывести элементы массива на экран:");
+            array.Show();
+
+            Console.WriteLine(array.DefaultSize);
+            array.DefaultSize = 3;
+            Console.WriteLine(array.DefaultSize);
+            array.ReadArray();
             array.Show();
 
             Console.WriteLine("\nВведите номер столбца, сумму которого необходимо вычислить:");

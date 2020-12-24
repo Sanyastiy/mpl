@@ -24,7 +24,7 @@ namespace z05.forms
                 try
                 {
                     //если х не попадает в область определения, то генерируется исключение 
-                    if (x == -1) throw new Exception();
+                    if (Math.Abs(x) == 2) throw new Exception();
                     else return Math.Log(4 - Math.Pow(x, 2));
                 }
                 catch
@@ -40,11 +40,13 @@ namespace z05.forms
                 for (double i = a; i <= b; i += h)
                     try
                     {
-                        richTextBox1.Text+=("y(" +i+")= "+f(i) + Environment.NewLine);
+                        if (Double.IsNaN(f(i)))
+                            richTextBox1.Text += ("y(" + i + ")= за пределами значения функции "+ Environment.NewLine); 
+                            else richTextBox1.Text+=("y(" +i+")= "+f(i) + Environment.NewLine);
                     }
                     catch
                     {
-                        richTextBox1.Text += ("y(" + i + ")= error" + Environment.NewLine);
+                        richTextBox1.Text += ("y(" + i + ")= функция не определена (0)" + Environment.NewLine);
                     }
             }
             catch (FormatException)

@@ -154,6 +154,7 @@ namespace z06.forms
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            richTextBox4.Text = "";
             int[,] myArray = Input2(int.Parse(textBox3.Text), int.Parse(textBox4.Text));
             for (int i = 0; i < myArray.GetLength(0); ++i)
             {

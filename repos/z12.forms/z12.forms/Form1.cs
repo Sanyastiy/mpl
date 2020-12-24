@@ -216,6 +216,7 @@ namespace z12.forms
             array.ReadArray(dataGridView1);
             label2.Text = "Строки массива "+ ((array)?"":"не ") +"упорядочены по возростаню" + Environment.NewLine;
             tabControl1.SelectedIndex = 2;
+            button3.Visible = true;
             button4.Visible = true;
             button5.Visible = true;
             button6.Visible = true;
@@ -236,6 +237,12 @@ namespace z12.forms
         private void button5_Click(object sender, EventArgs e)
         {
             array.Sort();
+            array.Show(dataGridView1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ++array;
             array.Show(dataGridView1);
         }
     }

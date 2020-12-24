@@ -13,8 +13,8 @@ namespace z05.console
             try
             {
                 //если х не попадает в область определения, то генерируется исключение 
-                if (x == -1) throw new Exception();
-                else return Math.Log( 4 - Math.Pow(x, 2));
+                if (Math.Abs(x) == 2) throw new Exception();
+                return Math.Log(4 - Math.Pow(x, 2));
             }
             catch
             {
@@ -35,11 +35,13 @@ namespace z05.console
                 for (double i = a; i <= b; i += h)
                     try
                     {
-                        Console.WriteLine("y({0})={1:f4}", i, f(i));
+                        if (Double.IsNaN(f(i)))
+                            Console.WriteLine("y({0})= за пределами значения функции", i); 
+                        else Console.WriteLine("y({0})={1:f4}", i, f(i));
                     }
                     catch
                     {
-                        Console.WriteLine("y({0})=error", i);
+                        Console.WriteLine("y({0})= функция не определена (0)", i);
                     }
             }
             catch (FormatException)
